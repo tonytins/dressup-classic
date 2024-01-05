@@ -7,8 +7,8 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "Dress Up Zack",
-    "version": "0.1.100"
+    "productName": "Dress Up Classic",
+    "version": "0.1.101"
   },
   "tauri": {
     "updater": {
@@ -45,7 +45,7 @@
       {
         "fullscreen": false,
         "resizable": false,
-        "title": "Dress Up Zack",
+        "title": "Dress Up Classic",
         "width": 1024,
         "height": 650
       }
