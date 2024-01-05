@@ -1,0 +1,39 @@
+<!doctype html>
+
+<head>
+    <!--
+         Dress Up Zack is free software: you can redistribute it and/or modify it under the terms of the GNU General Lesser Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. TPAW Unified is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details. You should have received a copy of the GNU Lesser General Public License along with TPAW Unified. If not, see <http://www.gnu.org/licenses/>. 
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dress Up Zack</title>
+    <link rel="stylesheet" type="text/css" href="/src/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/src/css/menu.css" />
+</head>
+
+<body>
+
+    <div id="game">
+        <div id="game-item"></div>
+        <script>
+            window.RufflePlayer = window.RufflePlayer || {};
+            window.RufflePlayer.config = {
+                "autoplay": "true",
+                "wmode": "transparent",
+                "allowNetworking": "none",
+            };
+            window.addEventListener("load", (event) => {
+                const ruffle = window.RufflePlayer.newest();
+                const player = ruffle.createPlayer();
+                player.style.width = "900px";
+                player.style.height = "600px";
+                const container = document.getElementById("game-item");
+                container.appendChild(player);
+                player.load("/src/imgs/dressup1-10.swf");
+            });
+        </script>
+        <script src="/src/scripts/ruffle/ruffle.js"></script>
+    </div>
+</body>
+
+</html>

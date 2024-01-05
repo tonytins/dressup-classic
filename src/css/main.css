@@ -1,0 +1,112 @@
+/*  ZC's Dress Up
+
+    ZC's Dress Up is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Lesser Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    TPAW Unified is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with TPAW Unified.  If not, see <http://www.gnu.org/licenses/>. */
+
+body {
+	font-family: Ubuntu;
+	font-size: 15px;
+	color: #000000;
+	background-color: #CCCC66;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-image: url(/src/imgs/background.svg);
+	overflow: hidden;
+}
+
+img {
+
+	border: 0px;
+
+}
+
+@font-face {
+	font-family: Ubuntu;
+	src: url("font.ttf");
+}
+
+#header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 21px;
+	background-color: #000000;
+}
+
+#header button {
+	background-color: #FFFFFF;
+	color: #000000;
+	height: 20px;
+	-webkit-border-radius: 5px;
+	border: 0px solid;
+}
+
+
+#about {
+	margin: 10%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 10px;
+	background-color: #0099FF;
+	border: 5px solid #000000;
+	color: #FFFFFF;
+}
+
+
+#about-b {
+	text-align: center;
+	margin-top: 55px;
+	margin-bottom: 10px;
+}
+
+
+
+#game {
+	text-align: center;
+	display: block;
+	padding: 5px;
+}
+
+#game-item {
+	padding-bottom: 5px;
+}
+
+ruffle-player,
+ruffle-embed,
+ruffle-object {
+	--splash-screen-background: none;
+	/* --logo-display: none; */
+}
+
+@media screen {
+	body>#header {
+		position: fixed;
+	}
+}
+
+.button {
+	padding: 10px;
+	font-size: 2em;
+	border-radius: 5px;
+	background-color: #0076a4;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.button:hover {
+	background-color: #FFFFFF;
+	color: #0076a4;
+}
