@@ -15,23 +15,7 @@
 
     <div id="game">
         <div id="game-item"></div>
-        <script>
-            window.RufflePlayer = window.RufflePlayer || {};
-            window.RufflePlayer.config = {
-                "autoplay": "true",
-                "wmode": "transparent",
-                "allowNetworking": "none",
-            };
-            window.addEventListener("load", (event) => {
-                const ruffle = window.RufflePlayer.newest();
-                const player = ruffle.createPlayer();
-                player.style.width = "900px";
-                player.style.height = "600px";
-                const container = document.getElementById("game-item");
-                container.appendChild(player);
-                player.load("/src/imgs/dressup1-10.swf");
-            });
-        </script>
+        <object><embed src="/src/imgs/dressup1-10.swf" width="900" height="600" wmode="transparent" /></object>
         <script src="/src/scripts/ruffle/ruffle.js"></script>
     </div>
 </body>
